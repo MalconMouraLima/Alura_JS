@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tabela Brasileiro</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+          <h1>Brasileirão Série A</h1>
+      </div>
+    </header>
+
+    <main class="container">
+
+      <section>
+        <h2>Adicionar Clube</h2>
+        <form class="" action="index.html" method="post">
+          <fieldset>
+            <label for="nome">Clube:</label>
+            <input type="text" id="campo-clube" placeholder="Informe o nome do clube">
+          </fieldset>
+
+          <fieldset class="campo-medio">
+            <label for="vitorias">Vitórias:</label>
+            <input type="text" id="campo-vitorias" placeholder="Número de vitórias">
+          </fieldset>
+
+          <fieldset class="campo-medio">
+            <label for="empates">Empates:</label>
+            <input type="text" id="campo-empates" placeholder="Número de empates">
+          </fieldset>
+
+          <fieldset class="campo-medio">
+            <label for="derrotas">Derrotas:</label>
+            <input type="text" id="campo-derrotas" placeholder="Número de derrotas">
+          </fieldset>
+
+          <button id="adicinar" class="botao bto-principal" >Adicionar</button>
+
+          <section>
+            <h2>Tabela</h2>
+
+            <table>
+              <tr>
+                <th>Clube</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Pontos</th>
+              </tr>
+            </table>
+          </section>
+
+        </form>
+      </section>
+
+    </main>
+
+    <script src="calcula-pontos.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+
+<input type="text" id="numero" />
+<button>button Compare Segredo</button>
+<input type="button" name="" value="Compare Segredo" id="advinhar"/>
+
+<script>
+
+  var segredo = Math.round(Math.random() * 10);
+
+  var segredos = [16, 23, 34, 65, 87];
+
+  // querySelector pega o conteudo da tag informada no parametro.
+  var input = document.querySelector("input");
+  input.focus();
+
+  var caixaDoNumero = document.getElementById("numero");
+
+
+  function verifica() {
+    if (input.value == segredo) {
+      alert("Vc acertou");
+    } else {
+      alert("Vc errou");
+    }
+    input.value = "";
+    input.focus();
+  }
+
+  var botaoClicado = function(){
+
+    var achou = false;
+    for (var i = 0; i < segredos.length; i++) {
+      if (segredos[i] == caixaDoNumero.value){
+          alert("Parabens vc acertou");
+          achou = true;
+          break;
+      }
+    }
+
+    if (achou == false){
+      alert("Infelizmente vc errou");
+      input.value = "";
+      input.focus();
+    }
+  }
+
+  var botaoAdvinha = document.getElementById("advinhar");
+  botaoAdvinha.onclick = botaoClicado;
+
+  var button = document.querySelector("button");
+  button.onclick = verifica;
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alura JS</title>
+  </head>
+  <body>
+
+
+  </body>
+
+<script type="text/javascript">
+
+  function calculaIMC(altura, peso) {
+
+    var imc = peso / (altura * altura);
+    return imc
+  }
+
+  function mostra(frase){
+    document.write(frase);
+  }
+
+  var IMCMalcon = calculaIMC(1.70, 104);
+  mostra(" O IMC de Malcon é: " + IMCMalcon);
+
+
+</script>
+
+</html>
